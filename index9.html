@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkText() {
+        let x = "1";
+        let arr = [];
+        do {
+            let a = prompt(" Nhập ký tự bất kỳ: ");
+            arr.push(a);
+            tt = prompt(" Bạn có muốn tiếp tục hay không ( C/K): ")
+        } while (tt === "C" || tt === "c");
+        for (let i = 0; i < arr.length; i++) {
+            if (x === arr[i]) {
+                alert("1");
+                break;
+            } else {
+                alert("-1");
+            }
+        }
+    }
+    checkText()
+</script>
+</body>
+</html>
